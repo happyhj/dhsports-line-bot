@@ -30,7 +30,16 @@ flask 의 경우 다음과 같다.
 ```
     app.run(host='0.0.0.0', debug=options.debug, port=options.port)
 ```
-4. 커밋 후 푸시한다 (master에)
+4. 웹서버의 포트가 heroku 환경변수 'PORT' 의 값이 되도록한다
+```
+port = os.getenv('PORT', None);
+...
+	arg_parser.add_argument('-p', '--port', default=port, help='port')
+	app.run(host='0.0.0.0', debug=options.debug, port=options.port)
+
+```
+5. 커밋 후 푸시한다 (master에)
+
 
 
 ### WebHook 연결 설정
