@@ -31,8 +31,10 @@
 정을 선택한다.
 2. 계정설정 -> Bot 설정에 들어간다.
 3. 상태 항목의 `LINE Developers` 아웃링크를 클릭한다.
-4. Webhook 항목에 `{heroku 의 domain}/callback` 이라고 주소를 적는다.
+4. Webhook URL 항목에 `{heroku 의 domain}/callback` 이라고 주소를 적는다.
 5. Bot 설정의 Channel Secret 과 Channel Access Token 을 heroku app 의 setting -> Config Variables 에서 `LINE_CHANNEL_ACCESS_TOKEN`, `LINE_CHANNEL_SECRET` 라는 환경변수 키에 저장한다.
+6. Webhook URL 항목의 verify 버튼을 눌러 성공하면 연동이 완료된 것이다.
+
 
  
 
