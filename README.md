@@ -25,7 +25,13 @@
 ### 깃에 echo 예제를 가져오기
 1. [line/line-bot-sdk-python] 에서 example/flask-echo 를 가져온다.
 2. `web: python app.py` 라고 적힌 Procfile 을 만든다.
-3. 커밋 후 푸시한다 (master에)
+3. 웹서버의 호스트ip 가 0.0.0.0 이 되도록 한다. (heroku 에서 0.0.0.0 이어야 외부 도메인으로 서비스가 노출됨)
+flask 의 경우 다음과 같다.
+```
+    app.run(host='0.0.0.0', debug=options.debug, port=options.port)
+```
+4. 커밋 후 푸시한다 (master에)
+
 
 ### WebHook 연결 설정
 1. [LINE@ MANAGER](https://admin-official.line.me/)  페이지에 들어가 방금만든 계
