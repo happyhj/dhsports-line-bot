@@ -20,6 +20,7 @@
 4. Connect to GitHub 에서 WebHook 어플리케이션을 개발할 깃허브 저장소를 선택하여 연결시킨다.
 5. Automatic deploys 를 활성화 시킨다.
 6. setting 에서 Builspacks 항목의 값을 heroku/python 을 선택한다.
+7. Resources 에서 web dynos 의 스위치를 켠다.
 
 ### 깃에 echo 예제를 가져오기
 1. [line/line-bot-sdk-python] 에서 example/flask-echo 를 가져온다.
